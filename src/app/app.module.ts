@@ -7,6 +7,7 @@ import { IngresarPresupuestoComponent } from './components/ingresar-presupuesto/
 import { GastosComponent } from './components/gastos/gastos.component';
 import { CrearGastoComponent } from './components/gastos/crear-gasto/crear-gasto.component';
 import { ListarGastoComponent } from './components/gastos/listar-gasto/listar-gasto.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,13 +15,10 @@ import { ListarGastoComponent } from './components/gastos/listar-gasto/listar-ga
     IngresarPresupuestoComponent,
     GastosComponent,
     CrearGastoComponent,
-    ListarGastoComponent
+    ListarGastoComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
