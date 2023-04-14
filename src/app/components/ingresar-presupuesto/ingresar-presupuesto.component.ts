@@ -23,6 +23,7 @@ export class IngresarPresupuestoComponent {
     }
     this.presupuestoInvalido = false;
     this._presupuestoServie.presupuesto = this.cantidad;
+    this._presupuestoServie.restante = this.cantidad;
     this.router.navigate(['/gastos']);
   }
 }

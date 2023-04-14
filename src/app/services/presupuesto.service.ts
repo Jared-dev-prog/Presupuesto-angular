@@ -8,4 +8,8 @@ export class PresupuestoService {
   restante: number = 0;
 
   constructor() {}
+
+  agregarGasto(gasto: any): void {
+    this.restante = this.restante - gasto.cantidad;
+  }
 }
